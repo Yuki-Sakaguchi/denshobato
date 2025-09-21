@@ -1,10 +1,6 @@
 # Denshobato
 
-<div align="center">
-  <img src="./assets/extension_icon.png" width="180">
-</div>
-
-A Raycast extension that helps avoid garbled characters and input errors when using IME (Input Method Editor). Denshobato provides a dedicated input form that sends text directly to the focused application while also saving it to your clipboard.
+🕊️ **Denshobato** (carrier pigeon) delivers your messages to any application's input field. Use our universal input form to stop worrying about service-specific quirks (Is Enter for new line or send?) and IME bugs once and for all!
 
 ## Why Use Denshobato?
 
