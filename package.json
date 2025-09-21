@@ -3,9 +3,8 @@
   "name": "denshobato",
   "title": "Denshobato",
   "description": "An input form that communicates with the other person on your behalf to avoid garbled characters and input errors when using IME",
-  "icon": "extension-icon.png",
-  "author": "yu_undefined",
-  "platforms": [
+  "icon": "extension_icon.png",
+
     "macOS",
     "Windows"
   ],
