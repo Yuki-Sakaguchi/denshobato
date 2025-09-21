@@ -6,6 +6,24 @@
 
 A Raycast extension that helps avoid garbled characters and input errors when using IME (Input Method Editor). Denshobato provides a dedicated input form that sends text directly to the focused application while also saving it to your clipboard.
 
+## Why Use Denshobato?
+
+### The Problem
+Every application has different input behaviors that can frustrate users:
+
+- **Inconsistent Submit Actions**: Is it Enter or Shift+Enter? You never know until you accidentally send an incomplete message
+- **IME Compatibility Issues**: Japanese, Chinese, Korean, and other IME inputs often malfunction in CLI tools, AI chat interfaces, and terminal applications
+- **Input Field Limitations**: Some applications have quirky text input behaviors that interfere with natural typing
+- **Accidental Submissions**: Different apps handle line breaks differently, leading to premature message sending
+
+### The Solution
+Denshobato provides a **consistent, reliable input environment** that works the same way every time:
+
+- ✅ **Predictable Behavior**: Always submit when you mean to submit
+- ✅ **IME-Friendly**: Perfect compatibility with all input methods
+- ✅ **Universal Compatibility**: Works with any application that accepts text input
+- ✅ **Safe Backup**: Your text is always saved to clipboard as insurance
+
 ## Features
 
 - **Smart Text Input**: Enter text in a dedicated form that bypasses IME-related issues
