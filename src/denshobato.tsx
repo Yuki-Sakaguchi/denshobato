@@ -124,7 +124,7 @@ export default function Command() {
         </ActionPanel>
       }
     >
-      <Form.Description text="📮 Dear Focused App," />
+      <Form.Description text="📮 Dear Focused Application," />
       <Form.TextArea id="textarea" title="Message" placeholder="Enter message to send..." />
       <Form.Description text="                                                     Sincerely, You 🕊️" />
       <Form.Description text="" />

@@ -1,6 +1,6 @@
 # Denshobato
 
-🕊️ **Denshobato** (carrier pigeon) delivers your messages to any application's input field. Use our universal input form to stop worrying about service-specific quirks (Is Enter for new line or send?) and IME bugs once and for all!
+🕊️ **Denshobato** (carrier pigeon) delivers your messages to any application's input field. Use our universal message form to stop worrying about service-specific quirks (Is Enter for new line or send?) and IME bugs once and for all!
 
 ## Why Use Denshobato?
 
@@ -18,24 +18,24 @@ Denshobato provides a **consistent, reliable input environment** that works the 
 - ✅ **Predictable Behavior**: Always submit when you mean to submit
 - ✅ **IME-Friendly**: Perfect compatibility with all input methods
 - ✅ **Universal Compatibility**: Works with any application that accepts text input
-- ✅ **Safe Backup**: Your text is always saved to clipboard as insurance
+- ✅ **Safe Backup**: Your message is always saved to clipboard as insurance
 
 ## Features
 
-- **Smart Text Input**: Enter text in a dedicated form that bypasses IME-related issues
-- **Direct Application Integration**: Automatically sends text to the currently focused application
-- **Clipboard Integration**: Automatically saves text to your clipboard for backup and convenience
+- **Smart Message Input**: Enter messages in a dedicated form that bypasses IME-related issues
+- **Direct Application Integration**: Automatically sends messages to the currently focused application
+- **Clipboard Integration**: Automatically saves messages to your clipboard for backup and convenience
 - **Fallback Support**: Gracefully handles permission issues with multiple fallback methods
-- **Cross-Application Compatible**: Works with any application that accepts text input
+- **Cross-Application Compatible**: Works with any application that accepts message input
 
 ## How It Works
 
 1. **Launch Denshobato** from Raycast
-2. **Enter your text** in the provided text area
+2. **Enter your message** in the provided message area
 3. **Submit** - Denshobato will:
-   - Attempt to paste text directly to the focused application using Raycast's clipboard API
+   - Attempt to paste message directly to the focused application using Raycast's clipboard API
    - If direct paste fails, use AppleScript to simulate Cmd+V keystroke
-   - Always save the text to your clipboard as a backup
+   - Always save the message to your clipboard as a backup
    - Restore your original clipboard content after operation
 
 ## Installation
@@ -52,13 +52,13 @@ Alternatively, you can search for "Denshobato" directly in Raycast and install i
 
 ### Basic Usage
 - Open Raycast and search for "Denshobato" or "Write a letter"
-- Enter your text in the text area
-- Press Enter or click Submit
-- The text will be sent to the focused application
+- Enter your message in the message area
+- Press Cmd+Enter or click Submit
+- The message will be sent to the focused application
 
 ### Permission Requirements
 - **Accessibility Access**: Required for AppleScript automation
-- If accessibility permissions are not granted, Denshobato will still copy text to your clipboard with a notification
+- If accessibility permissions are not granted, Denshobato will still copy your message to the clipboard with a notification
 
 ## License
 
