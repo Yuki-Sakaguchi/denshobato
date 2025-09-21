@@ -124,8 +124,12 @@ export default function Command() {
         </ActionPanel>
       }
     >
-      <Form.Description text="Enter text to send to the focused application. Text will also be saved to your clipboard." />
-      <Form.TextArea id="textarea" title="Text" placeholder="Enter text to send..." />
+      <Form.Description text="📮 Dear Focused App," />
+      <Form.TextArea id="textarea" title="Message" placeholder="Enter message to send..." />
+      <Form.Description text="                                                     Sincerely, You 🕊️" />
+      <Form.Description text="" />
+      <Form.Separator />
+      <Form.Description text="💡 Enter or Shift + Enter: New line" />
     </Form>
   );
 }
