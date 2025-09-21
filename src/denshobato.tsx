@@ -23,12 +23,12 @@ export default function Command() {
   }
 
   async function sendToFocusedApp(text: string): Promise<void> {
-    console.log("Attempting to send text:", text);
+    console.log("Attempting to send message:", text);
 
     try {
       // Method 1: Direct paste using Raycast API
       await Clipboard.paste(text);
-      console.log("Text pasted successfully using Clipboard.paste");
+      console.log("Message pasted successfully using Clipboard.paste");
     } catch (error) {
       console.error("Clipboard.paste failed, trying alternative method:", error);
 
@@ -36,7 +36,7 @@ export default function Command() {
       const originalClipboard = await Clipboard.read();
       try {
         await Clipboard.copy(text);
-        console.log("Text copied to clipboard successfully");
+        console.log("Message copied to clipboard successfully");
 
         // Use AppleScript as fallback
         await execAppleScript(`
@@ -69,18 +69,18 @@ export default function Command() {
   async function handleSubmit(values: Values) {
     const text = values.textarea.trim();
     if (!text) {
-      await showHUD("Please enter text");
+      await showHUD("Please enter message");
       return;
     }
 
-    console.log("Starting submission with text:", text);
+    console.log("Starting submission with message:", text);
 
     // Check permissions first
     const hasPermissions = await checkPermissions();
     if (!hasPermissions) {
       console.log("Permissions not available, falling back to clipboard only");
       await Clipboard.copy(text);
-      await showHUD("Text copied to clipboard (AppleScript permissions required for auto-paste)");
+      await showHUD("Message copied to clipboard (AppleScript permissions required for auto-paste)");
       return;
     }
 
@@ -89,7 +89,7 @@ export default function Command() {
 
       // Also copy to clipboard for user convenience
       await Clipboard.copy(text);
-      console.log("Text also saved to clipboard for user convenience");
+      console.log("Message also saved to clipboard for user convenience");
 
       // Verify clipboard content
       const clipboardContent = await Clipboard.read();
@@ -106,7 +106,7 @@ export default function Command() {
         if (error.message.includes("permission") || error.message.includes("access")) {
           await showHUD("Permission denied. Please check accessibility settings.");
         } else if (error.message.includes("AppleScript")) {
-          await showHUD("AppleScript failed. Text saved to clipboard instead.");
+          await showHUD("AppleScript failed. Message saved to clipboard instead.");
         } else {
           await showHUD(`Failed: ${error.message}`);
         }
@@ -120,7 +120,7 @@ export default function Command() {
     <Form
       actions={
         <ActionPanel>
-          <Action.SubmitForm onSubmit={handleSubmit} />
+          <Action.SubmitForm onSubmit={handleSubmit} title="Send Message" />
         </ActionPanel>
       }
     >
