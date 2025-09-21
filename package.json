@@ -15,7 +15,7 @@
   "commands": [
     {
       "name": "denshobato",
-      "title": "Write a letter",
+      "title": "Write a Letter",
       "description": "A pigeon will deliver the letter you wrote.",
       "mode": "view"
     }

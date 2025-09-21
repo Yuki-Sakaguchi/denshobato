@@ -51,7 +51,7 @@ Alternatively, you can search for "Denshobato" directly in Raycast and install i
 ## Usage
 
 ### Basic Usage
-- Open Raycast and search for "Denshobato" or "Write a letter"
+- Open Raycast and search for "Denshobato" or "Write a Letter"
 - Enter your message in the message area
 - Press Cmd+Enter or click Submit
 - The message will be sent to the focused application
