@@ -47,7 +47,7 @@ export default function Command() {
         console.log("AppleScript executed successfully");
 
         // Wait a bit before restoring clipboard
-        await new Promise((resolve) => setTimeout(resolve, 500));
+        await new Promise((resolve) => setTimeout(resolve, 300));
 
         // Restore original clipboard
         if (originalClipboard.text) {
