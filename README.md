@@ -4,7 +4,7 @@
 
 ## Why Use Denshobato?
 
-### The Problem
+### Problem
 Every application has different input behaviors that can frustrate users:
 
 - **Inconsistent Submit Actions**: Is it Enter or Shift+Enter? You never know until you accidentally send an incomplete message
@@ -12,7 +12,7 @@ Every application has different input behaviors that can frustrate users:
 - **Input Field Limitations**: Some applications have quirky text input behaviors that interfere with natural typing
 - **Accidental Submissions**: Different apps handle line breaks differently, leading to premature message sending
 
-### The Solution
+### Solution
 Denshobato provides a **consistent, reliable input environment** that works the same way every time:
 
 - ✅ **Predictable Behavior**: Always submit when you mean to submit
